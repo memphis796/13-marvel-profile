@@ -6,6 +6,12 @@
 @import 'box-sizing';
 @import 'variables';
 
+
+.marvel-main {
+  display: flex;
+  margin: 0 10em;
+}
+
 .marvel__title {
   background-color: $brand-primary;
   color: $brand-white;
@@ -16,15 +22,31 @@
   font-size: 2em;
 }
 
-.marvel__name {
-  max-width: 1040px;
-  margin: 0 auto;
+// .marvel__name {
+// }
+
+// .marvel-aside__column {
+//  // text-align: center;
+// }
+
+.marvel-characters {
+  margin: 0 2em;
 }
 
-.marvel-aside__column {
+.marvel-characters__list-item {
+  margin: 0 1.2em;
+}
 
+.character-list {
+  // display: flex;
 }
 
 .marvel-characters__list {
   display: flex;
+  // flex-wrap: wrap;
+}
+
+.character-list__comics {
+  display: flex;
+  // flex-wrap: wrap;
 }
