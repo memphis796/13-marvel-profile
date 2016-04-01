@@ -1,8 +1,8 @@
 // @import 'yoga';
 // @import 'normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'font-awesome';
 @import 'box-sizing';
 @import 'variables';
 
@@ -10,6 +10,7 @@
 .marvel-main {
   display: flex;
   margin: 0 10em;
+  font-family: $brand-display;
 }
 
 .marvel__title {
@@ -18,7 +19,9 @@
 }
 
 .marvel__title-name {
+  margin-top: 0;
   padding: 0.6em;
+  font-family: $brand-display;
   font-size: 2em;
 }
 
@@ -35,6 +38,7 @@
 
 .marvel-characters__list-item {
   margin: 0 1.2em;
+  border-radius: 0.5em;
 }
 
 .character-list {
@@ -49,4 +53,28 @@
 .character-list__comics {
   display: flex;
   // flex-wrap: wrap;
+}
+
+.character-list__comics-info {
+  margin: 0 1.2em;
+}
+
+.marvel-characters__pic {
+  border-radius: 0.2em;
+}
+
+.marvel-aside__creator-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.marvel-aside__creator-title {
+  border-bottom: $brand-border;
+}
+
+.read-button {
+  padding: 0.7em 4.2em;
+  border-radius: 0.7em;
+  background-color: $brand-primary;
+  color: $brand-white;
 }
