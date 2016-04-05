@@ -1,0 +1,17 @@
+.marvel-aside__pic {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  &:after {
+    display: block;
+    padding-top: 100%;
+    content: '';
+ }
+}
+
+.marvel-aside__pic-main {
+  position: absolute;
+  top: 1;
+  max-width: 100%;
+}
