@@ -1,18 +1,20 @@
 // @import 'yoga';
 // @import 'normalize';
-
+//
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+@import 'font-awesome';
 @import 'box-sizing';
 @import 'variables';
 @import 'sidebar';
 
+.main-container {
+  width: 72%;
+  margin: auto;
+}
 
 .marvel-main {
   display: flex;
   flex-grow: 1;
-  width: 70%;
-  margin: 0 auto;
 }
 
 .marvel__title {
@@ -22,61 +24,64 @@
 
 .marvel__title-name {
   margin-top: 0;
+  margin-left: 4.5em;
   padding: 0.6em;
   font-family: $brand-display;
   font-size: 2em;
 }
 
-.marvel-aside__pic {
-
+.marvel-aside__column {
+  // margin-right: 3em;
 }
 
-.marvel-aside__pic-img {
-
+.marvel-aside__pic-name {
+  font-family: $brand-sans;
 }
+//
+// .marvel-aside__pic-img {
+//
+// }
 
 .marvel-aside__creator-title {
   border-bottom: $brand-border;
+  font-family: $brand-display;
 }
 
 .marvel-aside__creator-list {
   padding: 0;
+  font-family: $brand-sans;
   list-style-type: none;
 }
 
-.marvel-characters {
-  margin: 0 2em;
-
-}
-
-.character-list {
-  margin-left: 1em;
-
-
-}
+// .marvel-characters {
+//
+// }
+//
+// .character-list {
+// }
 
 .marvel-characters__list {
-  margin: 0 2em;
-
+  display: flex;
 }
 
 .marvel-characters__list-item {
-  margin: 0 1.2em;
-  border-radius: 0.5em;
+  margin-right: 2em;
+  border-radius: 1em;
 }
 
-.character-list__comics {
-  margin-left: 1em;
-  margin: 0 2em;
-
-}
+// .character-list__comics {
+//
+// }
 
 .marvel-character__title {
-
+  margin-top: 0;
+  border-bottom: $brand-border;
+  font-family: $brand-display;
 }
 
 .character-list__comics-info {
-  margin: 0 1.2em;
+  margin-right: 2em;
+  // padding: 0 2em;
 }
 
 .read-button {
@@ -84,4 +89,8 @@
   border-radius: 0.7em;
   background-color: $brand-primary;
   color: $brand-white;
+}
+
+.comic-views {
+  display: flex;
 }
