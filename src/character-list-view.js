@@ -11,6 +11,7 @@ export default class CharacterListView {
   }
 
   renderCharacter() {
+    this.el.innerHTML = ``;
     this.characters.forEach((character) => {
       const characterView = new CharacterView(character);
       this.el.appendChild(characterView.el);
