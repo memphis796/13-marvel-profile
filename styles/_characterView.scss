@@ -1,0 +1,31 @@
+
+// .marvel-characters {
+//
+// }
+//
+// .character-list {
+// }
+
+.marvel-characters__list {
+  display: flex;
+}
+
+.marvel-characters__list-item {
+  margin-right: 2em;
+  border-radius: 1em;
+}
+
+// .character-list__comics {
+//
+// }
+
+.marvel-character__title {
+  margin-top: 0;
+  border-bottom: $brand-border;
+  font-family: $brand-display;
+}
+
+.character-list__comics-info {
+  margin-right: 2em;
+  // padding: 0 2em;
+}

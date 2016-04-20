@@ -3,13 +3,18 @@
 import ComicView from 'comic-view';
 
 export default class ComicListView {
-  contructor(el, comic) {
+  constructor(el, comics) {
     this.el = el;
-    this.comic = comic;
+    this.comics = comics;
 
+    this.renderComics();
+  }
+
+  renderComics() {
+    this.el.innerHTML = ``;
     this.comics.forEach((comic) => {
-      const comicView = ComicView(comic);
-      this.el.appendChild(comicView, el)
-    })
+      const comicView = new ComicView(comic);
+      this.el.appendChild(comicView.el);
+    });
   }
 }
