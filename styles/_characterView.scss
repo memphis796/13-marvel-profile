@@ -1,13 +1,17 @@
 
-// .marvel-characters {
-//
-// }
-//
-// .character-list {
-// }
+.container {
+  display: flex;
+  max-width: 90%;
+  margin: auto;
+}
+
+.marvel-character__container {
+  border-radius: 2em;
+}
 
 .marvel-characters__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .marvel-characters__list-item {
@@ -23,6 +27,7 @@
   margin-top: 0;
   border-bottom: $brand-border;
   font-family: $brand-display;
+  font-size: 4em;
 }
 
 .character-list__comics-info {

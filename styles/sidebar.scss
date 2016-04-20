@@ -1,17 +1,36 @@
-.marvel-aside__pic {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
 
-  &:after {
-    display: block;
-    padding-top: 100%;
-    content: '';
- }
+
+.marvel-aside__column {
+  padding: 0 2em;
+  font-size: 4em;
 }
+// .marvel-aside__pic {
+//   position: relative;
+//   width: 100%;
+//   overflow: hidden;
+//
+//   &:after {
+//     display: block;
+//     padding-top: 100%;
+//  }
+// }
 
 .marvel-aside__pic-main {
-  position: absolute;
-  top: 1;
-  max-width: 100%;
+  border-radius: 0.4em;
+}
+
+.marvel-aside__pic-name {
+  font-family: $brand-sans;
+}
+
+
+.marvel-aside__creator-title {
+  border-bottom: $brand-border;
+  font-family: $brand-display;
+}
+
+.marvel-aside__creator-list {
+  padding: 0;
+  font-family: $brand-sans;
+  list-style-type: none;
 }

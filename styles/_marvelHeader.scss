@@ -1,25 +1,13 @@
-// .main-container {
-//
-// }
-
-// .marvel-character__container {
-//
-// }
-
-.marvel-main {
-  // display: flex;
-  flex-grow: 1;
-}
 
 .marvel__title {
+  width: 100%;
   background-color: $brand-primary;
   color: $brand-white;
 }
 
 .marvel__title-name {
+  height: 15vh;
   margin-top: 0;
-  margin-left: 4.5em;
-  padding: 0.6em;
   font-family: $brand-display;
-  font-size: 2em;
+  font-size: 7em;
 }
