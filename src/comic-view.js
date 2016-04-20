@@ -10,19 +10,29 @@ export default class ComicView {
       <img class="comic-pic" src="${comic.thumbnail.path}.${comic.thumbnail.extension}" alt="" />
       <h3 class="comic-issue">#${comic.issueNumber}</h3>
       <h4 class="comic-info"><p>${comic.title}</p></h4>
-      <button class="read-button" type="button" name="button">Read More</button>
+      <button class="read-button">Read More</button>
       <div class="modal">
         <div class="modal-card">
+         <button class="close-button">X</button>
+          <p class="modal-card__title">${comic.title}</p>
           <p class="modal-card__content">${comic.description}</p>
         </div>
       </div>
     </div>`;
 
-    const whatever = this.el.querySelector(`.modal`);
 
+    this.showModal();
+  }
+  showModal() {
+    const close = this.el.querySelector(`.close-button`);
+    const open = this.el.querySelector(`.modal`);
     this.el.querySelector(`.read-button`).addEventListener(`click`, () => {
-      // add the class "modal-active" to the modal div
-      whatever.classList.add(`modal--active`);
+    // add the class "modal-active" to the modal div
+      open.classList.add(`modal--active`);
+    });
+    close.addEventListener(`click`, () => {
+    // closes read button
+      open.classList.toggle(`modal--active`);
     });
   }
 }
