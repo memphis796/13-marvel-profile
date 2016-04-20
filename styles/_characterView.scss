@@ -5,29 +5,37 @@
   margin: auto;
 }
 
-.marvel-character__container {
-  border-radius: 2em;
-}
-
 .marvel-characters__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .marvel-characters__list-item {
-  margin-right: 2em;
+  margin: 0.5em;
   border-radius: 1em;
 }
 
-// .character-list__comics {
-//
-// }
+.marvel-character__container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+
+  &:before {
+    display: block;
+    content: '';
+   }
+}
+
+.marvel__character {
+  border-radius: 1.5em;
+}
 
 .marvel-character__title {
   margin-top: 0;
   border-bottom: $brand-border;
   font-family: $brand-display;
-  font-size: 4em;
+  font-size: 6em;
 }
 
 .character-list__comics-info {

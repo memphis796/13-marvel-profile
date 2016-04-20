@@ -1,12 +1,28 @@
+.comic-views {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 1.5em;
+}
+
+.comic-pic {
+  position: relative;
+  // max-width: 100%;
+  border-radius: 1em;
+  overflow: hidden;
+
+  &:before {
+    display: block;
+    content: '';
+  }
+}
+
+// .comic-character__container {
+//
+// }
 
 .read-button {
   padding: 0.7em 4.2em;
   border-radius: 0.7em;
   background-color: $brand-primary;
   color: $brand-white;
-}
-
-.comic-views {
-  display: flex;
-  flex-wrap: wrap;
 }

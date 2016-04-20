@@ -5,16 +5,18 @@ export default class ComicView {
     this.el = document.createElement(`div`);
     this.el.classList.add(`character-list__comics-info`);
 
-    this.el.innerHTML =
-     `<img src="${comic.thumbnail.path}.${comic.thumbnail.extension}" alt="" />
-      <h3 class="">#${comic.issueNumber}</h3>
-      <h4 class=""><p>${comic.title}</p></h4>
+    this.el.innerHTML = `
+     <div class="comic-character__container">
+      <img class="comic-pic" src="${comic.thumbnail.path}.${comic.thumbnail.extension}" alt="" />
+      <h3 class="comic-issue">#${comic.issueNumber}</h3>
+      <h4 class="comic-info"><p>${comic.title}</p></h4>
       <button class="read-button" type="button" name="button">Read More</button>
       <div class="modal">
         <div class="modal-card">
           <p class="modal-card__content">${comic.description}</p>
         </div>
-      </div>`;
+      </div>
+    </div>`;
 
     const whatever = this.el.querySelector(`.modal`);
 
