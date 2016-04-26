@@ -1,0 +1,26 @@
+.marvel-aside__pic {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  &:before {
+    display: block;
+    content: '';
+ }
+}
+
+.marvel-aside__pic-main {
+  width: 100%;
+  border-radius: 0.4em;
+}
+
+
+.marvel-aside__creator-title {
+  border-bottom: $brand-border;
+  font-family: $brand-display;
+}
+
+.marvel-aside__creator-list {
+  padding: 0;
+  list-style-type: none;
+}

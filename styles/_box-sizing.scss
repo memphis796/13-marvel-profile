@@ -3,6 +3,11 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-family: $brand-sans;
+  margin: 0;
+}
+
 * {
   box-sizing: inherit;
 

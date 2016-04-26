@@ -1,0 +1,40 @@
+.marvel-characters__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -$gutter;
+}
+
+.marvel-characters__list-item {
+  width: calc(25% - #{$gutter} - #{$gutter});
+
+  margin: $gutter;
+}
+
+.marvel-character__container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+
+  &:before {
+    display: block;
+    content: '';
+   }
+}
+
+.marvel__character {
+  border-radius: 1rem;
+  width: 100%
+}
+
+.marvel-character__title {
+  margin-top: 0;
+  border-bottom: $brand-border;
+  font-family: $brand-display;
+  // font-size: 6em;
+}
+
+.character-list__comics-info {
+  margin-right: 2em;
+  // padding: 0 2em;
+}
