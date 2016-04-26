@@ -3,11 +3,11 @@
 export default class ComicView {
   constructor(comic) {
     this.el = document.createElement(`div`);
-    this.el.classList.add(`character-list__comics-info`);
+    this.el.classList.add(`marvel-characters__list-item`);
 
     this.el.innerHTML = `
      <div class="comic-character__container">
-      <img class="comic-pic" src="${comic.thumbnail.path}.${comic.thumbnail.extension}" alt="" />
+      <img class="marvel__character" src="${comic.thumbnail.path}.${comic.thumbnail.extension}" alt="" />
       <h3 class="comic-issue">#${comic.issueNumber}</h3>
       <h4 class="comic-info"><p>${comic.title}</p></h4>
       <button class="read-button">Read More</button>

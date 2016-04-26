@@ -1,8 +1,13 @@
 .modal {
   display: none;
+
   position: fixed;
   top: 0;
   left: 0;
+
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
   height: 100vh;
   background: $modal-screen;
@@ -11,4 +16,17 @@
   &--active {
     display: flex;
   }
+}
+
+.modal-card {
+  position: relative;
+  max-width: $container-width;
+  background: $brand-white;
+}
+
+.close-button {
+  position: absolute;
+  top: $gutter / 2;
+  right: $gutter / 2;
+  font-size: 1.2rem;
 }
