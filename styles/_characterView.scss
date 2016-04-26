@@ -1,19 +1,14 @@
-
-.container {
-  display: flex;
-  max-width: 90%;
-  margin: auto;
-}
-
 .marvel-characters__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 -$gutter;
 }
 
 .marvel-characters__list-item {
-  margin: 0.5em;
-  border-radius: 1em;
+  width: calc(25% - #{$gutter} - #{$gutter});
+
+  margin: $gutter;
 }
 
 .marvel-character__container {
@@ -28,7 +23,8 @@
 }
 
 .marvel__character {
-  border-radius: 1.5em;
+  border-radius: 1rem;
+  width: 100%
 }
 
 .marvel-character__title {

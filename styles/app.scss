@@ -10,3 +10,25 @@
 @import 'marvelHeader';
 @import 'characterView';
 @import 'comicView';
+
+.container {
+  max-width: 60rem;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 (-$gutter);
+}
+
+.marvel-aside__column {
+  flex-shrink: 0;
+  width: calc(25% - #{$gutter} - #{$gutter});
+  margin: 0 $gutter;
+}
+
+.marvel-characters {
+  width: calc(75% - #{$gutter} - #{$gutter});
+  margin: $gutter;
+}
